@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.dashboard-container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.welcome {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.highlight-row {
+    color: orange;
+    font-weight: bold;
+}
+
+.seat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row-label {
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.row-seats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.seat-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    color: white;
+}
+
+.seat-btn:hover:not(:disabled) {
+    transform: scale(1.1);
+}
+
+/* Seat colors */
+.seat-btn.available {
+    background-color: #5cb85c; /* Green */
+}
+
+.seat-btn.taken {
+    background-color: red; /* Red */
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.seat-btn.my-seat {
+    background-color: orange; /* Orange for user's reserved seat */
+}
+
+.seat-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.logout-container {
+    margin-top: 20px;
+}
+
+.logout-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 500px) {
+    .seat-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .row-label {
+        width: 60px;
+    }
+}

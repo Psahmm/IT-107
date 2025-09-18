@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    height: 100vh;
+    display: block;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.signup-container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    background-color: #333;
+    border-color: #5cb85c;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+.input-group input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.error-message {
+    color: red;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #5cb85c;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #4cae4c;
+}
