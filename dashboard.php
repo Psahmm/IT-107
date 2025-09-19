@@ -44,7 +44,7 @@ $seats_result = $conn->query("SELECT * FROM seats ORDER BY seat_number ASC");
 // Organize seats by rows
 $rows = [];
 while($seat = $seats_result->fetch_assoc()){
-    $row_letter = substr($seat['seat_number'], 0, 1);
+    $row_letter = substr($seat['seat_number'], 0, 1); // First character is row (e.g., "A1" → "A")
     $rows[$row_letter][] = $seat;
 }
 ?>
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const seatNumber = this.innerText;
                 const confirmed = confirm("Do you want to reserve seat " + seatNumber + "?");
                 if(!confirmed){
-                    e.preventDefault();
+                    e.preventDefault(); // Cancel submission if not confirmed
                 }
             };
         }
