@@ -1,3 +1,6 @@
+/* ================================
+   Global Styles
+   ================================ */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,7 +11,9 @@ body {
     align-items: center;
     height: 100vh;
 }
-
+/* ================================
+   Login Container Styles
+   ================================ */
 .login-container {
     background-color: #333;
     padding: 30px;
@@ -37,13 +42,13 @@ body {
     transition: background-color 0.3s ease, border-color 0.3s ease;
     box-sizing: border-box;
 }
-
+/* Highlight input on focus */
 .input-group input:focus {
     background-color: #333;
     border-color: #5cb85c;
     outline: none;
 }
-
+/* Placeholder styling */
 .input-group input::placeholder {
     color: #aaa;
 }
@@ -51,7 +56,9 @@ body {
 .input-group input:focus::placeholder {
     color: transparent;
 }
-
+/* ================================
+   Button Styles
+   ================================ */
 button {
     width: 100%;
     padding: 12px;
@@ -64,11 +71,13 @@ button {
     margin-bottom: 10px;
     transition: background-color 0.3s ease;
 }
-
+/* Hover effect for button */
 button:hover {
     background-color: #4cae4c;
 }
-
+/* ================================
+   Text, Links & Error Messages
+   ================================ */
 p {
     text-align: center;
 }
@@ -80,7 +89,7 @@ a {
 a:hover {
     color: #4cae4c;
 }
-
+/* Error message (used for login errors, etc.) */
 .error-message {
     padding: 10px;
     border-radius: 5px;
