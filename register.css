@@ -1,3 +1,6 @@
+/* ================================
+   Global Styles
+   ================================ */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,7 +13,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
-
+/* ================================
+   Signup Container (form box)
+   ================================ */
 .signup-container {
     background-color: #333;
     padding: 30px;
@@ -21,13 +26,17 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
 }
-
+/* ================================
+   Title / Heading
+   ================================ */
 h2 {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
 }
-
+/* ================================
+   Input Fields
+   ================================ */
 .input-group {
     margin-bottom: 20px;
 }
@@ -45,12 +54,13 @@ h2 {
     box-sizing: border-box;
 }
 
+/* Focus effect on inputs */
 .input-group input:focus {
     background-color: #333;
     border-color: #5cb85c;
     outline: none;
 }
-
+/* Placeholder text */
 .input-group input::placeholder {
     color: #aaa;
 }
@@ -58,7 +68,9 @@ h2 {
 .input-group input:focus::placeholder {
     color: transparent;
 }
-
+/* ================================
+   Buttons
+   ================================ */
 button {
     width: 100%;
     padding: 12px;
@@ -70,11 +82,13 @@ button {
     border-radius: 5px;
     margin-bottom: 10px;
 }
-
+/* Button hover effect */
 button:hover {
     background-color: #4cae4c;
 }
-
+/* ================================
+   Error Message (e.g., validation)
+   ================================ */
 .error-message {
     color: red;
     font-size: 18px;
@@ -82,10 +96,14 @@ button:hover {
     text-align: center;
 }
 
+/* ================================
+   Back Button (return to login/home)
+   ================================ */
 .back-button-container {
     text-align: center;
     margin-top: 20px;
 }
+
 
 .back-button {
     display: inline-block;
@@ -98,6 +116,7 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
+/* Hover effect for back button */
 .back-button:hover {
     background-color: #4cae4c;
 }
